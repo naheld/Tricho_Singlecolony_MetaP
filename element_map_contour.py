@@ -28,7 +28,7 @@ def gen_img(img, dpi=96):
 
 def make_trace(contours, image, show=True):
     trace = zeros_like(image)
-    fig, ax = gen_img(image_rg)
+    fig, ax = gen_img(image)
     for contour in contours:
         ax.plot(contour[:, 1], contour[:, 0], linewidth=2)
         for coords in contour:
